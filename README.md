@@ -2,3 +2,9 @@
 
 # Styles
 Sass with just enough postcss to have autoprefixer
+
+# Setup
+
+`npm install`
+`npm start`
+
