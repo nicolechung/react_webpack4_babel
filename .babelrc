@@ -1,0 +1,30 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "targets": ">0.25%, not ie 11, not op_mini all",
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": ["@babel/plugin-proposal-class-properties"],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "useBuiltIns": "entry",
+            "targets": ">0.25%, not ie 11, not op_mini all",
+          }
+        ],
+        "@babel/preset-react"
+      ],
+      // Jest runs in Node, and thus requires ES modules to be transpiled to CommonJS modules
+      // https://facebook.github.io/jest/docs/webpack.html#using-with-webpack-2
+      "plugins": ["@babel/plugin-proposal-class-properties", "transform-es2015-modules-commonjs"]
+    }
+  }
+}

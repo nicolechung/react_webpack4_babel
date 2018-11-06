@@ -1,0 +1,24 @@
+$orange: #F26419;
+$light-blue: #86BBD8;
+$darker-blue: #2E5A7C;
+$darkest-blue: #1B3549;
+$yellow: #F6AE2D;
+$green: #758E4F;
+$pink: #CC5F9E;
+
+html {
+  font-size: 62.5%;
+  body {
+    margin: 0;
+    // Body font size 16px
+    font-size: 1.6rem;
+    background-color: #f5f5f5;
+    color: $darker-blue;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+
+h1 {
+  color: $orange;
+}
