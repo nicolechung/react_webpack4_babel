@@ -11,14 +11,7 @@ module.exports = merge(common, {
     hot: true,
     port: 5000,
     proxy: {
-      '/api': {
-        target: 'http://localhost:8000',
-        secure: false
-      },
-      '/ad': {
-        target: 'http://localhost:8000',
-        secure: false
-      }
+      /* useful for proxying localhost api here */
     }
   },
   plugins: [
